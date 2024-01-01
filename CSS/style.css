@@ -1,0 +1,14 @@
+#header {
+    background-image: url("https://images.unsplash.com/photo-1516116216624-53e697fedbea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMjA3fDB8MXxzZWFyY2h8M3x8dmlzdWFsJTIwc3R1ZGlvJTIwY29kZXx8MHx8fHwxNjE5MzEyODIy&ixlib=rb-1.2.1&q=80&w=1080");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#js-logo {
+    width: 250px;
+    height: 250px;
+}
+
+body {
+    background-color: #F0DB4F;
+}

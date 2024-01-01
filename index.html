@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <link rel="stylesheet" type="text/css" href="CSS/media.css">
+    <script src="js/script.js"></script>
+    <title>JavaScript</title>
+</head>
+
+<body>
+
+    <div class="container-fluid border border-dark" id="header">
+        <div class="row">
+            <div class="col-12">
+                <img class="img-fluid border border-dark mx-auto mt-5 mb-5 d-block" id="js-logo"
+                    src="Resources/js-icon-1.png" alt="JavaScript-logo">
+            </div>
+            <div class="col-12">
+                <h2 class="mb-5 text-center text-white">JavaScript Examples</h2>
+            </div>
+        </div>
+    </div>
+
+    <nav class="container-fluid navbar navbar-expand bg-dark sticky-top mx-auto">
+        <div class="container">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link fs-3 text-white" href="#html-dom">HTML</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fs-3 text-white" href="#html-forms">Forms</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fs-3 text-white" href="#html-css">CSS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fs-3 text-white" href="#html-events">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fs-3 text-white" href="#html-listeners">Listeners</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <ul class="container-fluid nav nav-pills sticky-top border bg-dark mx-auto" id="mobile-nav">
+        <li class="nav-item dropdown mx-auto">
+            <a class="nav-link dropdown-toggle fs-1 text-white" data-bs-toggle="dropdown" href="#" role="button"
+                aria-expanded="false">More</a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#html-dom">HTML</a></li>
+                <li><a class="dropdown-item" href="#html-forms">Forms</a></li>
+                <li><a class="dropdown-item" href="#html-css">CSS</a></li>
+                <li><a class="dropdown-item" href="#html-events">Events</a></li>
+                <li><a class="dropdown-item" href="#html-listeners">Listeners</a></li>
+            </ul>
+    </ul>
+
+    <div class="container mt-5 text-center">
+        <div class="card">
+            <div class="card-header">
+                <h2>DOM HTML</h2>
+            </div>
+            <div class="card-body">
+                <p class="card-text">The HTML DOM stands for HTML Document Object Model. It is an Object Model for HTML
+                    that defines HTML elements as objects, properties for all HTML elements, methods for all HTML
+                    elements, and events for all HTML elements.</p>
+                <a href="https://www.w3schools.com/js/js_htmldom_html.asp" class="btn btn-primary" target="_blank">DOM
+                    HTML</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-3 text-center" id="html-dom">
+        <div class="row">
+            <div class="col-lg-4 mb-3">
+                <div class="card">
+                    <h5 class="card-header">Domain Name</h5>
+                    <div class="card-body">
+                        <p class="card-text" id="card-1">Click the below button to display the domain here.</p>
+                        <button type="button" class="btn btn-primary" onclick="function1()">Run</button>
+                        <button type="button" class="btn btn-primary"
+                            onclick="getElementById('card-1').innerHTML = 'Click the below button to display the domain here.'">Reset</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-3">
+                <div class="card">
+                    <h5 class="card-header">Display Title</h5>
+                    <div class="card-body">
+                        <p class="card-text" id="card-2">Click the below button to display the title name here.</p>
+                        <button type="button" class="btn btn-primary" onclick="function2()">Run</button>
+                        <button type="button" class="btn btn-primary"
+                            onclick="getElementById('card-2').innerHTML = 'Click the below button to display the title here.'">Reset</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-3">
+                <div class="card">
+                    <h5 class="card-header">Display Last Modification</h5>
+                    <div class="card-body">
+                        <p class="card-text" id="card-3">Click the below button to display last modification.</p>
+                        <button type="button" class="btn btn-primary" onclick="function3()">Run</button>
+                        <button type="button" class="btn btn-primary"
+                            onclick="getElementById('card-3').innerHTML = 'Click the below button to display last modification.'">Reset</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container mt-5 text-center" id="html-forms">
+        <div class="card">
+            <div class="card-header">
+                <h2>JavaScript Form Validation</h2>
+            </div>
+            <div class="card-body">
+                <p class="card-text">If a form field (fname) is empty, this function alerts a message, and returns
+                    false, to prevent the form from being submitted.</p>
+                <a href="https://www.w3schools.com/js/js_validation.asp" class="btn btn-primary" target="_blank">JS Form
+                    Validation</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container mt-3 text-center" id="JS-validation-1">
+        <div class="row">
+            <div class="col-lg-4 mx-auto w-75 mb-3">
+                <div class="card">
+                    <h5 class="card-header">Form</h5>
+                    <div class="card-body">
+                        <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+                            Name: <input type="text" name="fname">
+                            <input class="mt-2" type="submit" value="Submit">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-3 text-center" id="JS-validation-2">
+        <div class="row">
+            <div class="col-lg-4 mx-auto w-75 mb-3">
+                <div class="card">
+                    <h5 class="card-header">JavaScript Valadation</h5>
+                    <div class="card-body">
+                        <p>If the number is less than 100 (the input's min attribute), an error message will be
+                            displayed.</p>
+                        <input id="id1" type="number" min="100">
+                        <button class="mt-2" onclick="myFunction4()">OK</button>
+                        <p id="demo"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5 text-center" id="html-css">
+        <div class="card">
+            <div class="card-header">
+                <h2>CSS</h2>
+            </div>
+            <div class="card-body">
+                <p class="card-text">The HTML DOM allows JavaScript to change the style of HTML elements.</p>
+                <a href="https://www.w3schools.com/js/js_htmldom_css.asp" class="btn btn-primary"
+                    target="_blank">CSS</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-3 text-center" id="CSS-1">
+        <div class="row">
+            <div class="col-lg-4 mx-auto w-75 mb-3">
+                <div class="card">
+                    <h5 class="card-header">Change Background Color</h5>
+                    <div class="card-body">
+                        <h3 id="foo">Hello World!</h3>
+                        <button type="button" class="btn btn-primary" onclick="myFunction5()">Change Color</button>
+                        <button type="button" class="btn btn-primary" onclick="myFunction6()">Reset</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-3 text-center" id="CSS-2">
+        <div class="row">
+            <div class="col-lg-4 mx-auto w-75 mb-3">
+                <div class="card">
+                    <h5 class="card-header">Change Font Color</h5>
+                    <div class="card-body">
+                        <h3 id="foo2">Hello World!</h3>
+                        <button type="button" class="btn btn-primary" onclick="myFunction7()">Change Color</button>
+                        <button type="button" class="btn btn-primary" onclick="myFunction8()">Reset</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container mt-5 text-center" id="html-events">
+        <div class="card">
+            <div class="card-header">
+                <h2>Events</h2>
+            </div>
+            <div class="card-body">
+                <p class="card-text">HTML DOM allows JavaScript to react to HTML events</p>
+                <a href="https://www.w3schools.com/js/js_htmldom_events.asp" class="btn btn-primary"
+                    target="_blank">Events</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-3 text-center" id="html-events2">
+        <div class="row">
+            <div class="col-lg-4 mb-3">
+                <div class="card">
+                    <h5 class="card-header">Upper Case</h5>
+                    <div class="card-body">
+                        <h2>Enter your name</h2>
+                        <input type="text" id="fname" oninput="upperCase()">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-3">
+                <div class="card">
+                    <h5 class="card-header">Mouse Over</h5>
+                    <div class="card-body">
+                        <h2 onmouseover="mOver(this)" onmouseout="mOut(this)">Click On The Text</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-3">
+                <div class="card">
+                    <h5 class="card-header">Display Last Modification</h5>
+                    <div class="card-body">
+                        <h2 onmouseover="style.color='red'" onmouseout="style.color='black'">
+                            Click On The Text</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5 text-center" id="html-listeners">
+        <div class="card">
+            <div class="card-header">
+                <h2>Event Listeners</h2>
+            </div>
+            <div class="card-body">
+                <p class="card-text">Event listeners are a way of adding interactivity to the web pages by responding to user actions, such as clicks, mouse movements and keyboard presses.</p>
+                <a href="https://www.w3schools.com/js/js_htmldom_eventlistener.asp" class="btn btn-primary" target="_blank">Event Listeners</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-3 text-center" id="listener-1">
+        <div class="row">
+            <div class="col-lg-4 mx-auto w-75 mb-3">
+                <div class="card">
+                    <h5 class="card-header">JavaScript addEventListener</h5>
+                    <div class="card-body">
+                        <p>This example uses the addEventListener() method to execute a function when a user clicks on a button.</p>
+                        <button type="button" class="btn btn-primary" onclick="myFunction9()">Alert</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+
+</body>

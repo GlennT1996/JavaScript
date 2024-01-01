@@ -1,0 +1,34 @@
+@media screen and (max-width: 992px) {
+    #js-logo {
+        width: 200px;
+        height: 200px;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    #html-dom {
+        width: 75%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #mobile-nav {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #js-logo {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #js-logo {
+        width: 100px;
+        height: 100px;
+    }
+}
